@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <h1 class="welcome-message">Welcome to Entertainment World</h1>
+    </div>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">Movies</button>
+            <div class="dropdown-content">
+                <a href="#">Action</a>
+                <a href="#">Comedy</a>
+                <a href="#">Drama</a>
+                <a href="#">Horror</a>
+                <a href="#">Romance</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Dramas</button>
+            <div class="dropdown-content">
+                <a href="#">Romantic</a>
+                <a href="#">Historical</a>
+                <a href="#">Thriller</a>
+                <a href="#">Fantasy</a>
+                <a href="#">Crime</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Music</button>
+            <div class="dropdown-content">
+                <a href="#">Pop</a>
+                <a href="#">Rock</a>
+                <a href="#">Hip-Hop</a>
+                <a href="#">Classical</a>
+                <a href="#">Jazz</a>
+            </div>
+        </div> 
+        <div class="language">
+            <input type="text" placeholder="Enter Language">
+            <select>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="zh">Mandarin</option>
+            </select>
+        </div>
+    </div>
+    <div class="image-text-section">
+        <div class="image-container">
+            <img src="school.jpg" alt="Your Image Description">
+        </div>
+        <div class="text-container">
+            <h2 id="Description">Description</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut est voluptatem atque, nesciunt veritatis non architect
+                o magni labore laudantium alias rerum eligendi consequuntur! Laborum, ipsam consequatur! Modi, eos amet!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut est voluptatem atque, nesciunt veritatis non architect
+                o magni labore laudantium alias rerum eligendi consequuntur! Laborum, ipsam consequatur! Modi, eos amet!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut est voluptatem atque, nesciunt veritatis non architect
+                o magni labore laudantium alias rerum eligendi consequuntur! Laborum, ipsam consequatur! Modi, eos amet!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut est voluptatem atque, nesciunt veritatis non architect
+                o magni labore laudantium alias rerum eligendi consequuntur! Laborum, ipsam consequatur! Modi, eos amet!ect
+                o magni labore laudantium alias rerum eligendi consequuntur! Laborum, ipsam consequatur! Modi, eos ametLorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut est voluptatem atque, nesciunt veritatis non arch
+                .</p>
+        </div>
+    </div>
+    <div class="image-row">
+        <div class="image-block">
+            <img src="image1.png" alt="Image 1 Description">
+        </div>
+        <div class="image-block">
+            <img src="image2.png" alt="Image 2 Description">
+        </div>
+        <div class="image-block">
+            <img src="image3.png" alt="Image 3 Description">
+        </div>
+    </div>
+    <div class="caption-row">
+        <div class="caption-block">
+            <p>Avtaar</p>
+        </div>
+        <div class="caption-block">
+             <p>Spider Man</p>
+        </div>
+        <div class="caption-block">
+             <p>Black Panter</p>
+        </div>
+    </div>
+    <div class="image-row">
+        <div class="image-block">
+            <img src="image4.png" alt="Image 1 Description">
+        </div>
+        <div class="image-block">
+            <img src="image5.png" alt="Image 2 Description">
+        </div>
+        <div class="image-block">
+            <img src="image6.png" alt="Image 3 Description">
+        </div>
+    </div>
+    <div class="caption-row">
+        <div class="caption-block">
+            <p>3 Idiots</p>
+        </div>
+        <div class="caption-block">
+             <p>Spider Man</p>
+        </div>
+        <div class="caption-block">
+             <p>Black Panter</p>
+        </div>
+    </div>
+    <div class="three-section-container">
+        <div class="section form-section">
+            <form id="submissionForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="mail">Mail</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="Phone">Phone</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="formResponse"></p>
+        </div>
+        <div class="section subscribe-section">
+            <button id="subscribeBtn">Subscribe</button>
+            <p id="subscribeResponse"></p>
+        </div>
+        <div class="section image-section">
+            <img src="image copy 2.png" alt="A descriptive image" width="100%">
+        </div>
+    </div>
+    <div class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12972.163689965199!2d78.79348487024275!3d13.649343183296207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb28d2995aaaab3%3A0xc4ba9363ecd567ae!2sJNTUA%20College%20Of%20Engineering%20Kalikiri!5e0!3m2!1sen!2sin!4v1722625550893!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map1"></iframe>
+    </div>
+    <script>
+        document.querySelectorAll('.dropbtn').forEach(button => {
+            button.addEventListener('click', () => {
+                let dropdownContent = button.nextElementSibling;
+                dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+                    dropdown.style.display = 'none';
+                });
+            }
+        }
+        document.getElementById('submissionForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('formResponse').textContent = 'Submitted';
+        });
+        document.getElementById('subscribeBtn').addEventListener('click', function() {
+            document.getElementById('subscribeResponse').textContent = 'Subscribed';
+        });
+    </script>
+</body>
+</html>
